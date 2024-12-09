@@ -73,26 +73,7 @@ const firebaseConfig = {
 
 ---
 
-## Deployment Steps
 
-1. Install the Firebase CLI:
-   ```bash
-   npm install -g firebase-tools
-   ```
-2. Login to Firebase:
-   ```bash
-   firebase login
-   ```
-3. Initialize your project:
-   ```bash
-   firebase init
-   ```
-4. Deploy your application:
-   ```bash
-   firebase deploy
-   ```
-
----
 
 ## Execution Workflow
 
@@ -151,21 +132,13 @@ Contributions are welcome! If you want to improve this project, feel free to for
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
 ## Contact
 
 For any inquiries or suggestions, please contact:
 - **Developer:** Shashi Kumar Yadav
-- **Email:** [YourEmail@example.com]
+
 
 ---
+##git clone
+git clone https://github.com/Sky607/student-teacher-appointment-booking.git
 
-## Live Demo
-
-If deployed, provide the live demo link here:
-[Live Demo](https://example.com)
