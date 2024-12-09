@@ -1,0 +1,185 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+#role{
+    padding:10px;
+    font-size: 15px;
+}
+
+/* Navbar styling */
+
+nav{
+    width:100%;
+}
+nav .brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+nav .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul.active {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color:#4CAF50 ;
+    padding: 10px;
+    border-radius: 8px;
+    width:70%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul.active li {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #4CAF50;
+}
+
+/* Responsive Navigation Bar */
+nav {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+
+nav .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .nav-link {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+  
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+@media screen and (max-width: 768px) {
+    nav .nav-link{
+       position:absolute;
+        top:38px;
+        background:#4CAF50;
+        width:100%;
+       left:20px;
+        font-size:20px;
+      
+    }
+
+}
+
+/* Main Panels */
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#app h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav .hamburger {
+        display: flex;
+    }
+}

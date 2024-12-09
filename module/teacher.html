@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Teacher Booking Appointment</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="brand">Booking App</div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./admin.html">Admin Panel</a></li>
+            <li><a href="./student.html">Student Panel</a></li>
+            <li><a href="./teacher.html">Teacher Panel</a></li>
+            <li><a href="./Login.html">Login</a></li>
+            <li><a href="./register.html">Register</a></li>
+            
+        </ul>
+    </nav>
+<h2>Teacher Panel</h2>
+<h3>Manage Appointments</h3>
+<ul id="teacherAppointments"></ul>
+<script>
+    // Hamburger Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+navLinks.classList.toggle('active');
+});
+
+</script>
+
+<script type="module" src="../js/firebase_config.js"></script>
+<script src="../js/teacher.js"></script>
+</body>
+</html>
